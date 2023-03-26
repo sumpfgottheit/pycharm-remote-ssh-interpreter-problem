@@ -1,5 +1,8 @@
-git clone
-cd foobar
-python3 -mvenv .venv
-export PATH=.venv/bin:$PATH
+git https://github.com/sumpfgottheit/pycharm-remote-ssh-interpreter-problem.git
+cd pycharm-remote-ssh-interpreter-problem
+python3 -mvenv .venv            # new VENV in .venv directory
+export PATH=.venv/bin:$PATH     # Optional include .venv/bin in PATH before other interpreters
+.venv/bin/pip install -e .      # click uses setuptools entrypoints
+.venv/bin/foobar                # run the click command
+
 
