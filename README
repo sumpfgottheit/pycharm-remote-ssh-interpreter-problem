@@ -1,0 +1,5 @@
+git clone
+cd foobar
+python3 -mvenv .venv
+export PATH=.venv/bin:$PATH
+
